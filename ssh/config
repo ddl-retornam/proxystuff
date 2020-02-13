@@ -1,0 +1,6 @@
+Host pjump
+    HostName
+    User 
+    IdentityFile
+    Port 22
+    ProxyCommand ssh -i  ubuntu@ nc %h %p

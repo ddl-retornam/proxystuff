@@ -1,0 +1,9 @@
+version: '3.4'
+services:
+  ssh:
+    build: .
+    image: dan/ussh:1.0
+    volumes:
+      - ./ssh:/root/.ssh
+    ports:
+      - 8089:8089
